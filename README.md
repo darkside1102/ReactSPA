@@ -1,2 +1,0 @@
-# ReactSPA
-Created with CodeSandbox
