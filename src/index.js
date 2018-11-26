@@ -1,16 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
+import Layout from "../src/layouts/Layout";
 
 import "./styles.css";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
-}
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+const app = document.getElementById("root");
+ReactDOM.render(
+  <Provider>
+    <BrowserRouter>
+      <Layout />
+    </BrowserRouter>
+  </Provider>,
+  app
+);
